@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para Mi chinita:\n\nDesde hace varioa años que te conozco y cada día me enamoro mas y me doy cuenta de \nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `Para Mi chinita:\n\nDesde hace tiempo que te conozco, Monse, y pues espero que todo mejore y que podamos irnos conociendo más cada vez, para así poder conseguir una relación muy linda. ❤️\nY la verdad, volver a hablar contigo nunca lo planeé, amor, pero me alegra mucho lo que está pasando. Me gusta poder volver a hablar contigo y espero que podamos lograr algo muy lindo juntos, amor. ❤️\n\nTe amo más de lo que las palabras pueden expresar,el contador comenzara cuando formalicemos amor.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -161,7 +161,7 @@ function showCountdown() {
     let eventSeconds = Math.max(0, Math.floor((eventDiff / 1000) % 60));
 
     container.innerHTML =
-      `Llevamos juntos: <b>${20}</b>dias<br>` +
+      `Llevamos juntos: <b>${0}</b>dias<br>` +
       `Nuestro aniversario: <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s</b>`;
     container.classList.add('visible');
   }
